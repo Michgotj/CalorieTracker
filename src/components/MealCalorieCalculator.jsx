@@ -108,7 +108,7 @@ const MealCalorieCalculator = () => {
     },
   ]);
   const mealDropdownRef = useRef(null);
-  const apiKey = "sk-proj-Q63cv6oKpfcv4vkK4L2lT3BlbkFJWENWU5lyVoQhyapZO3pP";
+  const apiKey = "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";
 
   const getCalories = async (foodName, grams) => {
     const messages = [
