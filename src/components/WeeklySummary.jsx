@@ -74,7 +74,7 @@ const Question = styled.span`
   color: #333;
 `;
 
-const daysOfWeek = [
+const DAYS_OF_WEEK = [
   { day: "Monday", deficitCalories: 0, Didyoumadeit: "?" },
   { day: "Tuesday", deficitCalories: 0, Didyoumadeit: "?" },
   { day: "Wednesday", deficitCalories: 0, Didyoumadeit: "?" },
@@ -90,7 +90,7 @@ const WeeklySummary = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      daysOfWeek.forEach(async (day) => {
+      DAYS_OF_WEEK.forEach(async (day) => {
         const dayRef = doc(db, day.day, "TotalCalories");
         const docSnapshot = await getDoc(dayRef);
         if (docSnapshot.exists()) {
@@ -133,7 +133,7 @@ const WeeklySummary = () => {
   const fetchTotalCalories = async () => {
     try {
       let totalCaloriesSum = 0;
-      for (const day of daysOfWeek) {
+      for (const day of DAYS_OF_WEEK) {
         const dayRef = doc(db, day.day, "Total Calories");
         const docSnap = await getDoc(dayRef);
 
@@ -175,7 +175,7 @@ const WeeklySummary = () => {
 
         <tbody>
           {Object.keys(table3Data).length === 0
-            ? daysOfWeek.map((day) => (
+            ? DAYS_OF_WEEK.map((day) => (
                 <TableRow key={day.day}>
                   <td className="text-left">{day.day}</td>
                   <td>{day.deficitCalories}</td>

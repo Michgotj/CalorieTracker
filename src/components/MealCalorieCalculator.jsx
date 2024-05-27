@@ -72,7 +72,7 @@ const Dropdown = styled(Select)`
     display: none;
   }
 `;
-const dayOptions = [
+const DAY_OPTIONS = [
   { value: "Monday", label: "Monday" },
   { value: "Tuesday", label: "Tuesday" },
   { value: "Wednesday", label: "Wednesday" },
@@ -81,7 +81,7 @@ const dayOptions = [
   { value: "Saturday", label: "Saturday" },
   { value: "Sunday", label: "Sunday" },
 ];
-const initialState = [
+const INITIAL_STATE = [
   { meal: "Breakfast", calories: 0, target: 200, remaining: 200 },
   { meal: "Lunch", calories: 0, target: 200, remaining: 200 },
   { meal: "Dinner", calories: 0, target: 200, remaining: 200 },
@@ -93,7 +93,7 @@ const initialState = [
 
 const MealCalorieCalculator = () => {
   const [selectedDay, setSelectedDay] = useState("");
-  const [summaryData, setSummaryData] = useState(initialState);
+  const [summaryData, setSummaryData] = useState(INITIAL_STATE);
   const [rows, setRows] = useState([
     {
       id: 1,
@@ -108,7 +108,7 @@ const MealCalorieCalculator = () => {
     },
   ]);
   const mealDropdownRef = useRef(null);
-const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
+  const apiKey = "sk-proj-Q63cv6oKpfcv4vkK4L2lT3BlbkFJWENWU5lyVoQhyapZO3pP";
 
   const getCalories = async (foodName, grams) => {
     const messages = [
@@ -177,7 +177,7 @@ const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
           })
         );
 
-        const formattedData = initialState.map((item, index) => ({
+        const formattedData = INITIAL_STATE.map((item, index) => ({
           meal: item.meal,
           calories: mealData[index]?.Calories || item.calories,
           target: mealData[index]?.Target || item.target,
@@ -322,8 +322,8 @@ const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
             <tr key={row.id}>
               <td>
                 <Dropdown
-                  options={dayOptions}
-                  value={dayOptions.find(
+                  options={DAY_OPTIONS}
+                  value={DAY_OPTIONS.find(
                     (option) => option.value === selectedDay
                   )}
                   onChange={handleDaySelect}
