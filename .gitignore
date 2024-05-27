@@ -1,0 +1,18 @@
+# Node.js and npm
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Compiled files
+build/
+dist/
+
+# Environment variables
+.env
+
+# macOS
+.DS_Store
+
+# IDE-specific files
+.vscode/
+.idea/
