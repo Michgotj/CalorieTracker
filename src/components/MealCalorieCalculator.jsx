@@ -108,7 +108,7 @@ const MealCalorieCalculator = () => {
     },
   ]);
   const mealDropdownRef = useRef(null);
-const ***REMOVED*** = process.env.REACT_APP_OPENAI_API_KEY;
+const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
 
   const getCalories = async (foodName, grams) => {
     const messages = [
@@ -134,7 +134,7 @@ const ***REMOVED*** = process.env.REACT_APP_OPENAI_API_KEY;
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${***REMOVED***}`,
+            Authorization: `Bearer ${apiKey}`,
           },
         }
       );
