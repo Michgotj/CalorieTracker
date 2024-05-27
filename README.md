@@ -12,9 +12,8 @@ Getting Started:
    
 This application was developed using:
 1. React.js for a modern and responsive UI.
-2. Express/Node.js for robust server-side functionality.
-3. Firebase Firestore for efficient data storage.
-4. API Integration: Leveraging OpenAI API for advanced features.
+2. Firebase Firestore for efficient data storage and backend functionality.
+3. API Integration: Leveraging OpenAI API for advanced features.
    
 Join MealCalorieTracker today and embark on a journey to better health and wellness!
 
