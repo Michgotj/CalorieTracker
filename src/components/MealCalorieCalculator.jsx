@@ -108,7 +108,7 @@ const MealCalorieCalculator = () => {
     },
   ]);
   const mealDropdownRef = useRef(null);
-  const apiKey = "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";
+  const apiKey = process.env.REACT_APP_API_KEY;
 
   const getCalories = async (foodName, grams) => {
     const messages = [
