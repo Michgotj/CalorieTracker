@@ -7,13 +7,27 @@ MealCalorieTracker integrates OpenAI for enhanced features and accurate calorie 
 Getting Started:
 1. Installation: Clone the repository and navigate to the project directory.
 2. Dependencies: Run npm install to install required packages.
-3. Run the App: Navigate to the 'src' folder and run npm start to start the app.
+3. Set up environment variables: Create a `.env` file in the root directory of the project and add the following environment variables for secure API integration before running the app:
 
-   
+REACT_APP_API_KEY=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
+
+REACT_APP_FIREBASE_API_KEY=AIzaSyApdnXtKrD7GOjD_g9m-hoXuBKLUDmhDtw
+REACT_APP_FIREBASE_AUTH_DOMAIN=caloriestracking-8f63e.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=caloriestracking-8f63e
+REACT_APP_FIREBASE_STORAGE_BUCKET=caloriestracking-8f63e.appspot.com
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=907336181185
+REACT_APP_FIREBASE_APP_ID=1:907336181185:web
+REACT_APP_FIREBASE_MEASUREMENT_ID=G-CP5GMH89MQ
+
+These are the default API keys and configuration values for the project.
+
+4.Run the App: Navigate to the 'src' folder and run npm start to start the app.
+
 This application was developed using:
+
 1. React.js for a modern and responsive UI.
 2. Firebase Firestore for efficient data storage and backend functionality.
-3. API Integration: Leveraging OpenAI for advanced features.
+3. OpenAI: Leveraging OpenAI for advanced features.
    
 Join MealCalorieTracker today and embark on a journey to better health and wellness!
 
