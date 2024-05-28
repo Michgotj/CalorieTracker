@@ -20,15 +20,14 @@ REACT_APP_FIREBASE_APP_ID=1:907336181185:web
 REACT_APP_FIREBASE_MEASUREMENT_ID=G-CP5GMH89MQ
 
 These are the default API keys and configuration values for the project.
-
-4.Run the App: Navigate to the 'src' folder and run npm start to start the app.
+4. Run the App: Navigate to the 'src' folder and run npm start to start the app.
 
 This application was developed using:
 
 1. React.js for a modern and responsive UI.
 2. Firebase Firestore for efficient data storage and backend functionality.
 3. OpenAI: Leveraging OpenAI for advanced features.
-   
+
 Join MealCalorieTracker today and embark on a journey to better health and wellness!
 
 ![image](https://github.com/Michgotj/CalorieTrackerApp/assets/142809781/dc9a1a4d-8bcc-43d9-b609-edc45ec9e92f)
